@@ -1,2 +1,3 @@
 .vscode/settings.json
 .env
+vendors/ab-lua-libs/type-ex/table.lua

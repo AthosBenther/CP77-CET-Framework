@@ -15,7 +15,7 @@ end
 function Autoloader.scanAndLoad(folder, absolutePath)
     absolutePath = absolutePath or ""
     local dirInfo = dir("./" .. folder)
-    if  type(dirInfo) ~= "table" then dump({dirInfo,folder,absolutePath}) end
+    if  type(dirInfo) ~= "table" then log({dirInfo,folder,absolutePath}) end
     for _, path in pairs(dirInfo) do
         local kind = path.type
         local name = path.name

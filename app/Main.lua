@@ -1,7 +1,7 @@
 Main = {}
 function Main.init()
     registerForEvent("onInit", function()
-        log(config('app.name','Mod') .. ": Hello World!")
+        log(config('app.name', 'Mod') .. ": Hello World!")
     end)
 end
 

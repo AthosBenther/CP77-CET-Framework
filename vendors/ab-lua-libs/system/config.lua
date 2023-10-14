@@ -11,7 +11,7 @@ function Config.Init()
         if (kind == "file"
                 and string.sub(name, - #".lua") == ".lua"
                 and name ~= 'autoloader.lua') then
-            cfg = string.sub(name, 1, -1 - #".lua")
+            local cfg = string.sub(name, 1, -1 - #".lua")
             configs[cfg] = dofile("./config/" .. name)[cfg]
         end
     end
@@ -20,8 +20,8 @@ end
 function config(config, default)
     default = default or nil
 
-    params = string_split(config, ".")
-    cfgLvl = configs
+    local params = string_split(config, ".")
+    local cfgLvl = configs
 
     for _, value in pairs(params) do
         cfgLvl = cfgLvl[value] or nil

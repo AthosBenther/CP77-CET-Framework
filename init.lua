@@ -1,11 +1,12 @@
-Sandbox = {
+
+Mod = {
     descrition = "Sandbox"
 }
 
 require("vendors/autoloader")
 Autoloader.init()
 Config.Init()
-Sandbox.init = Main.init()
-FileManager.save("", "../Sandbox.log")
+Mod.init = Main.init()
+FileManager.save("", "../" .. config("app.shortName") .. ".log")
 
-return Sandbox
+return Mod
