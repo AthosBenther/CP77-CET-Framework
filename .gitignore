@@ -1,3 +1,10 @@
-.vscode/settings.json
+.vscode
 .env
-vendors/ab-lua-libs/type-ex/table.lua
+db.sqlite3
+*.log
+*.zip
+*.bkp
+storage/
+deployment/obj/
+deployment/bin/
+*.sln
