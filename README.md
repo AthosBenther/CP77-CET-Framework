@@ -1,4 +1,4 @@
-# CP77-CET-Framework (Minimum Viable Product)
+# CP77-CET-Framework
 A simple framework for working with CET mods for Cyberpun 2077
 
 ## Description
